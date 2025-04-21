@@ -1,1 +1,22 @@
+= How to contribute to the EM data model by testing the current SQL / JSON specification.
+
+*Welcome!*
+
+WGTIFD has developed a standardised format for data collected and analysed from EM systems. This data model is designed to offer regulators a data storage and exchange specification, and to align with the International Council for the Exploration of the Sea (ICES) data framework to facilitate the submission of data to ICES databases e.g., the Regional Database and Estimation System (RDBES) for use in the provision of scientific advice. 
+
+At this stage we would like to verify that the data model accurately represents the electronic monitoring domain and meets data management and processing needs. We invite users to review the data model to ensure it captures the data collected in your EM programmes and the relationships between data correctly. 
+
+If you are unfamiliar with the EM data model the OTHER_EVENTS table is designed to be a ‘catch-all’ for any non-catch item specific information e.g., sightings, unusual observations, video quality remarks. You can be as imaginative as you like with the EVENT_CODE and EVENT_CATEGORY_CODE fields you devise in that regard.  
+
+We ask that you validate the data model against some sample data from your EM programmes to ensure that it can handle real data types, formats, values, and volumes, and that there is an appropriate field for all core data elements.
+
+==== Specifically
+.	Is the model sufficiently flexibility to your own workflow / data model
+.	Are there any important fields that seem to be missing
+.	Which areas do you think would benefit from guidance / more explanation or documentation
+.	What events do you end up capturing in OTHER_EVENTS
+.	Would the current data model pose any limitations or issues in the extraction or analysis of data after it has been housed in the model
+
+*Help*
+If you still have questions about how to contribute to the continuous development of the data model, or would like to share feedback regarding your review / testing of the data model please contact the https://www.ices.dk/community/groups/Pages/WGTIFD.aspx[WGTIFD chairs]. If you would like to report specific issues with the specification please open an issue in the https://github.com/ices-eg/wg_WGTIFD/issues[submit an issue]. Mention @hholah in the issue.
 
